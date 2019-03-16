@@ -1,0 +1,193 @@
+#searchTxt {
+	padding: 10px 20px;
+}
+
+.info {
+	/* border: 1px solid rgba(128, 128, 128, 0.438); */
+	display: none;
+	margin-top: 30px;
+	padding: 20px;
+	box-shadow: 0px 0px 0.7px rgb(158, 158, 158);
+}
+
+.img {
+	max-width: 100%;
+	height: auto;
+}
+
+.name_title,
+.number_title {
+	font-weight: bold;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.name_field {
+	width: 250px;
+	padding: 5px;
+	font-size: 15px;
+	color: rgb(68, 68, 68);
+
+}
+
+.number_field {
+	width: 100px;
+	padding: 5px;
+	font-size: 15px;
+	color: rgb(68, 68, 68);
+
+}
+
+
+
+.name_field::placeholder,
+.number_field::placeholder {
+	font-size: 13.5px;
+}
+
+.choose_name {
+	background-color: rgb(12, 142, 218);
+	border-color: rgb(12, 142, 218);
+	font-weight: 600;
+	padding: 5px;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+
+.choose_name:hover {
+	background-color: #0A77B6;
+}
+
+.choose_number {
+	outline: none;
+	background-color: rgb(12, 142, 218);
+	border-color: rgb(12, 142, 218);
+	font-weight: 600;
+	padding: 5px;
+	color: white;
+	cursor: pointer;
+	outline: none;
+}
+
+.choose_number:hover {
+	background-color: #0A77B6;
+
+}
+
+option {
+	background-color: #fff;
+	color: black;
+	/* margin: 10px; */
+}
+
+form {
+	display: flex;
+	justify-content: space-between;
+	/* border: 1px solid black; */
+	margin: 0 auto;
+	width: 820px;
+
+}
+
+.name_field_box {
+	display: flex;
+	align-items: center;
+}
+
+.number_field_box {
+	display: flex;
+	align-items: center;
+}
+
+.button_info {
+
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.show_btn {
+	margin-right: 70px;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid rgba(128, 128, 128, 0.534);
+	padding: 4px 10px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	font-size: 15px;
+	box-shadow: 0px 0px 0.5px rgba(128, 128, 128, 0.384);
+	outline: none;
+}
+
+.show_btn:hover {
+	background-color: rgba(211, 211, 211, 0.24);
+
+}
+
+
+.hide_btn {
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid rgba(128, 128, 128, 0.534);
+	padding: 4px 10px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	font-size: 15px;
+	box-shadow: 0px 0px 0.5px rgba(128, 128, 128, 0.384);
+	outline: none;
+
+}
+
+.hide_btn:hover {
+	background-color: rgba(211, 211, 211, 0.24);
+
+}
+
+@media screen and (max-width: 840px) {
+	form {
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+	}
+
+
+	.name_field_box {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.number_field_box {
+		margin-top: 20px;
+		flex-direction: column;
+		align-items: flex-start;
+
+	}
+
+	.choose_name {
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.choose_number {
+		margin-top: 10px;
+		width: 100%;
+
+	}
+
+	.number_field {
+		width: 250px;
+	}
+
+	.show_btn {
+		margin-right: 30px;
+		cursor: pointer;
+	}
+
+}
